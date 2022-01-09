@@ -1,0 +1,10 @@
+{% extends "exercise/base.html"%} {% block content %}
+<h1>Exercise home html!</h1>
+<ul>
+  Exercises:
+  <!-- exex is key in context dictionary -->
+  {% for e in exes %}
+  <li>{{ e.title }}</li>
+  {% endfor %}
+</ul>
+{% endblock content %}
